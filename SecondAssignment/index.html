@@ -1,0 +1,89 @@
+<!DOCTYPE html>>
+<html>
+  <head>
+    <title>Assigned Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <fieldset id="second">
+      <!-- page title -->
+      <h1 id="title">Food Prefrences</h1>
+      <div>
+        <!-- short description -->
+        <p id="description">
+          We would like to know your food prefrences for this super important
+          international comfrence.<br />
+          We aim to serve you better.
+        </p>
+      </div>
+      <div>
+        <!-- form element -->
+        <form id="survey-form" action="post">
+          <fieldset>
+            <legend>Personal information:</legend>
+            Full Name:<br />
+            <input
+              type="text"
+              name="Fname"
+              id="name"
+              placeholder="enter your full name"
+            /><br />
+            Email:<br />
+            <input
+              type="email"
+              required
+              name="Email"
+              id="email"
+              placeholder="you@emil.com"
+            /><br />
+            Phone number: <br />
+            <input
+              pattern="[0-9]+"
+              required
+              minlength="11"
+              maxlength="11"
+              name="phone"
+              id="number"
+              placeholder="080xxx"
+            /><br />
+          </fieldset>
+          <fieldset>
+            <legend>Diet Recommendation</legend>
+            Breakfast Options:
+            <select name="Breakfast" id="dropdown">
+              <option value="Tea and Bread">Tea and Bread</option>
+              <option value="Coffee and cookies">Coffee and cookies</option>
+              <option value="Pancakes and honey">Pancakes and honey</option>
+              <option value="Waffles and eggs">Waffles and eggs</option>
+            </select>
+            <br />
+            <br />
+            <div id="lnch">
+              Lunch options:
+              <input type="radio" name="Lunch" value="jellof and meat" /> Jellof
+              and meat <br />
+              <input type="radio" name="Lunch" value="Fried rice and Chicken" />
+              Fried rice and Chicken <br />
+              <input type="radio" name="Lunch" value="Beans and bread" /> Beans
+              and bread <br />
+            </div>
+            <br />
+            <div id="dinn">
+              Dinner:
+              <input type="checkbox" name="dinner" value="Sharwama and juice" />
+              Sharwama and juice <br />
+              <input type="checkbox" name="dinner" value="Small chops" /> Small
+              chops <br />
+              <input type="checkbox" name="dinner" value="pepper soup" /> pepper
+              soup <br />
+            </div>
+          </fieldset>
+          <br />
+          <textarea placeholder="comment" rows="10" cols="20"></textarea><br />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </fieldset>
+  </body>
+</html>
